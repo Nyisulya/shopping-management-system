@@ -1,0 +1,43 @@
+Enter JSON
+{
+    "username": "andrew",
+    "email": "andrew@gmail.com",
+    "password": "12345"
+}
+
+C:\Windows\System32\cmd.exe - mvn spring-boot:run
+2026-09-28T14:16:14.514+03:00  INFO 15144 --- [vehiclehub] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-28T14:16:14.607+03:00  INFO 15144 --- [vehiclehub] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-28T14:16:14.940+03:00  INFO 15144 --- [vehiclehub] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-28T14:16:15.288+03:00  INFO 15144 --- [vehiclehub] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-28T14:16:15.368+03:00  INFO 15144 --- [vehiclehub] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  43:59 min
+[INFO] Finished at: 2026-09-28T14:16:16+03:00
+[INFO] ------------------------------------------------------------------------
+Terminate batch job (Y/N)? Y (Press Enter)
+
+C:\Windows\System32\cmd.exe
+D:\Andrew Mhina\BACHELOR OF SCIENCE IN INFORMATION AND COMMUNICATION TECHNOLOGY LEVEL 2\Industrial Training DIT\VehicleHub\vehiclehub>mvn spring-boot: (Press Enter)
+OUTPUT:
+2026-09-28T14:28:10.852+03:00  INFO 4784 --- [vehiclehub] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-28T14:28:10.981+03:00  INFO 4784 --- [vehiclehub] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-28T14:28:11.421+03:00  WARN 4784 --- [vehiclehub] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-28T14:28:12.051+03:00  INFO 4784 --- [vehiclehub] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-28T14:28:12.061+03:00  INFO 4784 --- [vehiclehub] [           main] c.v.vehiclehub.VehiclehubApplication     : Started VehiclehubApplication in 9.398 seconds (process running for 10.216)
+
+
+OUTPUT:
+Status: 200 OK
+{
+    "email":"andrew@gmail.com",
+    "password":"12345",
+    "userId":1,
+    "username":"andrew"
+}
+
+OUTPUT:
+Status: 200 OK
+Login successful. Welcomeandrew
